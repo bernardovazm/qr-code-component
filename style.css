@@ -1,0 +1,88 @@
+/* custom properties */
+:root {
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-light-gray: hsl(212, 45%, 89%);
+	--clr-grayish-blue: hsl(220, 15%, 55%);
+	--clr-dark-blue: hsl(218, 44%, 22%);
+
+	--ff-body: "Outfit", sans-serif;
+
+	--fw-regular: 400;
+	--fw-bold: 700;
+}
+
+/* simple css reset */
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* dark mode user-agent-styles */
+html {
+	color-scheme: dark light;
+}
+
+/* min body height */
+body {
+	min-height: 100vh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
+
+/* custom style */
+body {
+	font-family: var(--ff-body);
+	font-weight: var(--fw-regular);
+	font-size: 0.938rem;
+	color: var(--clr-grayish-blue);
+	background-color: var(--clr-light-gray);
+
+	display: grid;
+}
+
+.card {
+	background: var(--clr-white);
+	margin: auto;
+	padding: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.075) 0px 16px 42px;
+	border-radius: 1.3rem;
+	max-width: 311px;
+	text-align: center;
+}
+
+img {
+	border-radius: 0.6rem;
+}
+
+.card__description {
+	padding: 0.5rem;
+}
+
+/* direct descendent selector; */
+/* get all(*) direct(>) childs of element */
+.card__description > * {
+	margin: 1rem 0;
+}
+
+h3 {
+	font-weight: var(--fw-bold);
+	font-size: 1.35rem;
+	color: var(--clr-dark-blue);
+}
