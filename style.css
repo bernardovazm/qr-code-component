@@ -69,8 +69,6 @@ img {
 	padding: 0.5rem;
 }
 
-/* direct descendent selector; */
-/* get all(*) direct(>) childs of element */
 .card__description > * {
 	margin: 1rem 0;
 }
