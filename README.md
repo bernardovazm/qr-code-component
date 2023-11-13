@@ -41,6 +41,14 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ###### Containing comments, tips and reminders cleaned out from the code
 
+Direct descendent selector, get all (\*) direct (>) childs of element:
+
+```css
+.card__description > * {
+	...;
+}
+```
+
 Name mangling convention example:
 
 ```html
